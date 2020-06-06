@@ -1,0 +1,144 @@
+.header {
+    background: url(../images/Bg.png) no-repeat;
+    background-size: cover ;
+    padding-top: 30px;
+    height: 650px;
+    position: relative;
+
+    &__line {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__title {
+        text-align: center;
+        font-size: 80px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: white;
+        margin-top: 180px;
+    }
+
+    &__info {
+        font-size: 18px;
+        text-align: center;
+        text-transform: uppercase;
+        color: rgb(231, 231, 231);
+        margin-top: 20px;
+    }
+}
+
+.menu {
+    &__container {
+        display: flex;
+    }
+
+    &__item {
+        margin-left: 50px;
+        position: relative;
+        transition: .3s;
+
+        &::before {
+            content: '';
+            position: absolute;
+            width: 8px;
+            height: 8px;
+            border: 1px solid white;
+            border-radius: 50%;
+            top: calc(50% - 4px);
+            left: -20px;
+        }
+
+        &--active::before {
+            background-color: white;
+        }
+
+        &:hover {
+            transform: scaleX(1.05);
+        }
+    }
+
+    &__link {
+        font-size: 14px;
+        text-decoration: none;
+        color: white;
+        text-transform: uppercase;
+    }
+}
+
+.social {
+    display: flex;
+
+    &__item {
+        margin-left: 10px;
+        width: 30px;
+        height: 30px;
+        border: 1px solid rgba(196, 196, 196, .8);
+        position: relative;
+        transition: .3s;
+
+        &:hover {
+            border-color: aqua;
+
+            & .social__icon {
+                fill: aqua;
+            }
+        }
+    }
+
+    &__icon {
+        width: 15px;
+        height: 15px;
+        position: absolute;
+        fill: #fff;
+        transition: .3s;
+    }
+}
+
+.facebook {
+    width: 8px;
+    top: 7px;
+    left: 10px;
+}
+
+.twitter {
+    top: 7px;
+    left: 7px;
+}
+
+.inst {
+    top: 7px;
+    left: 7px;
+}
+
+.round {
+    border-radius: 50%;
+}
+
+.scroll {
+    width: 40px;
+    height: 40px;
+    border: 1px solid white;
+    position: relative;
+    left: calc(50% - 20px);
+    margin-top: 120px;
+    transition: .3s;
+
+    &:hover {
+        border-color: aqua;
+
+        & .scroll__icon {
+            fill: aqua;
+        }
+    }
+
+    &__icon {
+        position: absolute;
+        top: -5px;
+        left: -6px;
+        width: 50px;
+        fill: white;
+        height: 50px;
+        transition: .3s;
+    }
+}

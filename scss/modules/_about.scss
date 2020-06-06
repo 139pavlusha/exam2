@@ -1,0 +1,112 @@
+.about {
+    background-color: white;
+    &__title {
+        margin-top: 130px;
+        margin-bottom: 100px;
+        text-align: center;
+        font-size: 44px;
+        font-weight: 700;
+    }
+}
+
+.first-line {
+    margin-top: 100px;
+
+    &__rect {
+        width: 400px;
+        height: 400px;
+        position: relative;
+    }
+
+    &__img {
+        height: 400px;
+        position: absolute;
+        top: 50px;
+        left: 100px;
+    }
+}
+
+.blue {
+    background-color: #55b7ff;
+}
+
+.block {
+    padding-top: 50px;
+    &--right {
+        padding-left: 50px
+    }
+
+    &__moto {
+        font-size: 20px;
+        text-transform: uppercase;
+        color: rgb(87, 87, 87);
+    }
+
+    &__title {
+        text-transform: uppercase;
+        margin-top: 10px;
+        font-size: 44px;
+        font-weight: 700;
+        margin-bottom: 30px;
+    }
+
+    &__desc {
+        width: 450px;
+        line-height: 1.5;
+        font-size: 14px;
+        color: rgb(87, 87, 87);
+    }
+
+    &__button {
+        text-transform: uppercase;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        width: 150px;
+        height: 40px;
+        background-color: white;
+        outline: 1px solid rgb(87, 87, 87);
+
+        :hover {
+            background-color: aqua;
+            color: white;
+            transform: scaleX(1.05);
+            cursor: pointer;
+        }
+    }
+
+    &__adress {
+        font-style: italic;
+
+        :hover {
+            color: aqua;
+            transform: scaleX(1.05);
+            cursor: pointer;
+        }
+    }
+}
+
+.marker {
+    height: 20px;
+}
+
+.second-line {
+    margin-top: 100px;
+
+    &__rect {
+        margin-left: 220px;
+        width: 400px;
+        height: 400px;
+        position: relative;
+    }
+
+    &__img {
+        height: 400px;
+        position: absolute;
+        top: 50px;
+        right: 100px;
+    }
+}
+
+.violet {
+    background-color: #7e5aff;
+}
